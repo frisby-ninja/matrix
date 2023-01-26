@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "matrix",
+  "version": "${version}",
+  "name": "Matrix",
+  "description": "A mod.",
+  "authors": [
+    "frisby_ninja"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/matrix/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.ninjaworks.matrix.MatrixClient"
+    ],
+    "main": [
+      "net.ninjaworks.matrix.Matrix"
+    ]
+  },
+  "mixins": [
+    "matrix.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.13",
+    "fabric": "*",
+    "minecraft": "1.19.3"
+  }
+}
